@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    margin-bottom: 30px;
   }
 html {
     font-size: 16px;
@@ -80,3 +81,14 @@ header {
         height: 50vh;
     }
   }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+#mail-icon {
+    margin-top: 2rem;
+}

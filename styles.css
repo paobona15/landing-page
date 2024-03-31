@@ -1,7 +1,10 @@
+html, body {
+    margin: 0;
+  }
 html {
     font-size: 16px;
 }
-a {
+header a {
     text-decoration: none;
     color:#F9F7F7;
 }
@@ -28,8 +31,8 @@ header div {
     opacity: 100%;
 }
 header {
-    background-color: gray;
     align-items: center;
+    position: sticky;
 }
 .navbar ul {
     list-style: none;
@@ -39,17 +42,41 @@ header {
     display: inline;
     
 }
-.container {
+.container-vanilla {
     height: 70vh;
     display: flex;
     align-items:end;
-    justify-content: space-between;
-    background-color: #DBE2EF;
+    justify-content: space-around;
+    background-color: #112D4E;
 }
 .cover-info {
     align-self:center;
-    margin-left: 5rem;
+    color: #F9F7F7;
+    font-family: Poppins, sans-serif;
+    padding: 1rem;
 }
 .profile-pic {
-    height: 500px;
+    max-width:70vw;
+    height: auto;
+    max-height: 70vh;
 }
+.cover-info p {
+    font-weight: 100;
+}
+@media (max-width: 900px) {
+    .container-vanilla {
+        position: relative;
+        background-color: #112D4E;
+    }
+    .cover-info {
+        position: absolute;
+        height: 66vh;
+        width: 100%;
+        text-align: center;
+    }
+    .profile-pic {
+        width:450px;
+        min-width: 450px;
+        height: 50vh;
+    }
+  }

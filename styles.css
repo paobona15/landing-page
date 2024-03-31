@@ -97,3 +97,6 @@ header {
     font-weight: 600;
     color:#3F72AF !important; 
 }
+.crop-image {
+    object-fit:scale-down;
+}
